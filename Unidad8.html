@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Formulario con JS</title>
+</head>
+<body>
+    <div class="container bg-light p-2 flex-fill bd-highlight">
+        <br>
+        <div class="titulo1 shadow-sm p-3 mb-5 bg-white rounded align-text-bottom">
+            Ingreso al sistema
+        </div>
+        
+        <form class="form-inline p-2 flex-fill bd-highlight">
+            <div class="form-group">
+
+                <label for="inlineFormInputGroupUsername2">Usuari@</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                        <input type="text" id="usuario" placeholder="Usuari@" required>
+                    </div>
+            
+                <label for="inputPassword6">Clave</label>
+                        <input type="password" id="clave" class="form-control mx-sm-3"required>
+                        <small id="passwordHelpInline" class="text-muted">Debe tener entre 8 y 20 caracteres. </small>
+             
+                <br>
+                <br>
+                <div class="enviar">
+                    <button type="submit" value="validar" onclick="return validar()" class="btn btn-secondary mb-2">Ingresar</button>
+                    
+                </div> <!--fin de enviar-->
+        </div> <!--fin deform-inline-->
+        </form>
+    </div> <!--fin de container-->
+    <script  src="control.js"></script>
+</body>
+</html>
